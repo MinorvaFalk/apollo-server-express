@@ -1,6 +1,6 @@
 const { login } = require('../adapter/controller/auth')
 const { loginRequest } = require('../models/requests/auth-request')
-const { validate } = require('../utils/helpers/validate')
+const { validate } = require('../utils/validate')
 
 module.exports.auth = (express) => {
     const router = express.Router()
