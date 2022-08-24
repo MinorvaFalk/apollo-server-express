@@ -37,7 +37,8 @@ const routes = require('./routes');
     await server.start();
     
     server.applyMiddleware({ 
-        app: app
+        app: app,
+        path: "/",
     });
 
     await new Promise(resolve => httpServer.listen({ port: PORT }, resolve));
